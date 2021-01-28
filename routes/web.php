@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pixel');
+    return view('layouts.template');
 });
+
+//Route::get('/products-details', 'ProductsController@showProduct') ->name('');
