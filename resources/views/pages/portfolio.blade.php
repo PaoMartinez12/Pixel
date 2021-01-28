@@ -128,7 +128,7 @@
               </div>
               <div class="col-sm-4">
                 <div class="w-like">
-                  <a href="{{route('layouts.pages.portfolio-details')}}"> <span class="ion-ios-plus-outline"></span></a>
+                  <a href=""> <span class="ion-ios-plus-outline"></span></a>
                 </div>
                 
               </div>

@@ -20,7 +20,7 @@
                 <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
               </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+              <a href="{{route('payForm')}}" class="buy-btn">Get Started</a>
             </div>
           </div>
 
@@ -35,7 +35,7 @@
                 <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
                 <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
               </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+            <a href="{{route('payForm')}}" class="buy-btn">Get Started</a>
             </div>
           </div>
 
@@ -50,7 +50,7 @@
                 <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
                 <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
               </ul>
-              <a href="#" class="buy-btn">Get Started</a>
+              <a href="{{route('payForm')}}" class="buy-btn">Get Started</a>
             </div>
           </div>
 

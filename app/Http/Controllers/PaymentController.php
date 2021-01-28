@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class PaymentController extends Controller
+{
+    //
+    public function paymentForm()
+    {
+       
+        return view('pages.payment');
+    }
+}

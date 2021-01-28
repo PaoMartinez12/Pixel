@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('layouts.template');
 });
 
-//Route::get('/products-details', 'ProductsController@showProduct') ->name('');
+Route::get('/payment/', 'PaymentController@paymentForm') ->name('payForm');

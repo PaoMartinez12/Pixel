@@ -8,17 +8,17 @@
                         <h3 class="panel-title">Datos de Usuario</h3>
                     </div>
                     <div class="panel-body">
-                    <form method="POST" action="{{route('pay')}}">
+                    <form method="POST" action="">
                         @csrf
                             <div class="row register-form">
-                                @if ($id == 'demo') 
+                             
                                     <div class="col-md-1" >
                                     </div>
-                                @endif
+                               
 
                                  <!-- Datos de usuario-->
                                 <div class="col-md-4">
-                                    <input type="hidden" placeholder="IdPaquete" name="idPaquete"  id="idPaquete" class="form-control"  value="{{$id}}" >
+                                    <input type="hidden" placeholder="IdPaquete" name="idPaquete"  id="idPaquete" class="form-control"   >
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="nombre" placeholder="Nombre *" value="" required/>
                                     </div>
@@ -282,18 +282,17 @@
                                         </select>
                                     </div>
 
-                                    @if ($id == 'demo')
+                                 
                                         <div class="card-footer"> 
                                             <button type="submit" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
                                         </div>
-                                    @endif
+                                   
                                 </div>
 
                                  <!-- Margen-->
                                  <div class="col-md-1" >
                                 </div>
 
-                                @if ($id == 'beenetplay')
                                       <!-- Datos de tarjeta-->
                                     <div class="col-md-4" style="">
 
@@ -349,7 +348,7 @@
                                                             </span>
                                                         </label>
                                                         <div class="input-group">
-                                                        <input type="text" placeholder="Monto" name="monto"  id="monto" class="form-control"  value="{{$monto}}" required> 
+                                                        <input type="text" placeholder="Monto" name="monto"  id="monto" class="form-control"  required> 
                                                         
                                                             
                                                         </div>
@@ -361,36 +360,7 @@
                                             </div>
                                     </div>
 
-                                   
-                                @endif
-                                
-                                {{-- 
-                                @if ($id == 'demo')
-                                    <!-- Datos de tarjeta-->
-                                    <div class="col-md-4" >
-
-                                        <div id="credit-card" class="tab-pane fade show active pt-3">
-                                            
-                                            <div class="form-group"> 
-                                                <label for="username">
-                                                    <h6>Propietario</h6>
-                                                </label> 
-                                                <input type="text" name="propietario" placeholder="Nombre de propietario" required class="form-control ">
-                                            </div>
-                                           
-
-                                    </div>
-                                 @endif
-                                --}}
-
-                                 
-        
-                                
-                                 <!--
-                                <div class="col-md-6 col-md-offset-1" style="margin-left:150px">
-                                    <input type="submit" class="btnRegister"  value="Registrarse"/>
-                                </div>
-                            -->
+                            
                            
                             </div>
                         </form>
