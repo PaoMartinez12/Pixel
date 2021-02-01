@@ -1,3 +1,4 @@
+<link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 <main id="main">
     <div class="container" style="margin-top:180px ">
         <div class="row">
@@ -5,10 +6,10 @@
             <div class="col-md-12" style="">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Datos de Usuario</h3>
+                        <h3 class="panel-title">Formulario de pago</h3>
                     </div>
                     <div class="panel-body">
-                    <form method="POST" action="">
+                    <form method="POST" action="{{route('pay')}}">
                         @csrf
                             <div class="row register-form">
                              
@@ -18,7 +19,7 @@
 
                                  <!-- Datos de usuario-->
                                 <div class="col-md-4">
-                                    <input type="hidden" placeholder="IdPaquete" name="idPaquete"  id="idPaquete" class="form-control"   >
+                                    <input type="text" placeholder="IdPaquete" name="idPaquete"  id="idPaquete" class="form-control" value="{{$id}}"  >
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="nombre" placeholder="Nombre *" value="" required/>
                                     </div>
@@ -348,7 +349,7 @@
                                                             </span>
                                                         </label>
                                                         <div class="input-group">
-                                                        <input type="text" placeholder="Monto" name="monto"  id="monto" class="form-control"  required> 
+                                                        <input type="text" placeholder="Monto" name="monto"  id="monto" class="form-control"  value="{{$monto}}"  required> 
                                                         
                                                             
                                                         </div>

@@ -20,14 +20,14 @@
                 <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
               </ul>
-              <a href="{{route('payForm')}}" class="buy-btn">Get Started</a>
+              <a href="{{route('payForm',array(0,'demo'))}}" class="buy-btn">Get Started</a>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="box featured">
               <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span>per month</span></h4>
+              <h4><sup>$</sup>17<span>per month</span></h4>
               <ul>
                 <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
                 <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
@@ -35,7 +35,7 @@
                 <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
                 <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
               </ul>
-            <a href="{{route('payForm')}}" class="buy-btn">Get Started</a>
+            <a href="{{route('payForm',array(17,'basico'))}}" class="buy-btn">Get Started</a>
             </div>
           </div>
 
@@ -50,7 +50,7 @@
                 <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
                 <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
               </ul>
-              <a href="{{route('payForm')}}" class="buy-btn">Get Started</a>
+              <a href="" class="buy-btn">Get Started</a>
             </div>
           </div>
 

@@ -44,6 +44,12 @@
    <!--====== Fin CSS Galeria ===============-->
 
 
+   <!-- CSS payment -->
+  {{--<link rel="stylesheet" type="text/css" href="{{asset('style_payment/bootstrap/css/bootstrap.min.css')}}" />--}}
+  <link rel="stylesheet" type="text/css" href="{{asset('style_payment/font-awesome/css/font-awesome.min.css')}}" />
+  
+  @yield('cssPaymentForm')
+
   <!-- =======================================================
   * Template Name: Arsha - v2.3.0
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/

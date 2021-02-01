@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('layouts.template');
 });
 
-Route::get('/payment/', 'PaymentController@paymentForm') ->name('payForm');
+Route::get('/payment/{monto}/{id}', 'PaymentController@paymentForm') ->name('payForm');
+
+Route::post('/payment', 'PaymentController@pay') ->name('pay');
