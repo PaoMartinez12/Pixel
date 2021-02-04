@@ -10,11 +10,15 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class PaymentController extends Controller
 {
+    public function showLoginForm() {
+        return view('auth.login');
+    }
+
     //Mostrar el formulario de pago
     public function paymentForm($monto, $id)
     { 
           return view('pages.payment',compact('monto', 'id'));
-    }
+    } 
 
     //recuperar datos del formulario
     public function pay( Request $request) {

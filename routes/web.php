@@ -17,6 +17,22 @@ Route::get('/', function () {
     return view('layouts.template');
 });
 
+//=======================================Login=============================================//
+Route::get('/login', [App\Http\Controllers\HomeController::class, 'LoginForm'])->name('login');
+Auth::routes();
+Route::get('/loginForm', 'PaymentController@showLoginForm') ->name('loginForm');
+//======Fin Login====================//
+
+
+
+//=======================================Payment=============================================//
 Route::get('/payment/{monto}/{id}', 'PaymentController@paymentForm') ->name('payForm');
 
 Route::post('/payment', 'PaymentController@pay') ->name('pay');
+//======Fin Payment====================//
+
+
+
+
+
+
